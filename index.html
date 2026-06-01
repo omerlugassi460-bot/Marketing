@@ -384,6 +384,48 @@
         @media (min-width: 601px) {
             .swipe-hint { display: none; }
         }
+        /* תיקון צבע טקסט בתשובות - שחור בולט + מניעת כחול בטלפון */
+.answer-btn,
+.answer-btn span,
+.answer-text {
+    color: #000 !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+    -webkit-text-fill-color: #000 !important;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* שמירה על צבע האות (א, ב, ג, ד, ה) */
+.answer-letter {
+    color: #000 !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+/* שמירה על צבעים בתשובה נכונה */
+.answer-btn.correct,
+.answer-btn.correct span,
+.answer-btn.correct .answer-text {
+    color: #155724 !important;
+    -webkit-text-fill-color: #155724 !important;
+}
+
+.answer-btn.correct .answer-letter {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+}
+
+/* שמירה על צבעים בתשובה שגויה */
+.answer-btn.wrong,
+.answer-btn.wrong span,
+.answer-btn.wrong .answer-text {
+    color: #721c24 !important;
+    -webkit-text-fill-color: #721c24 !important;
+}
+
+.answer-btn.wrong .answer-letter {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+}
     </style>
 </head>
 <body>
